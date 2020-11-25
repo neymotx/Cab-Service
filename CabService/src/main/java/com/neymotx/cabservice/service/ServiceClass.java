@@ -71,5 +71,9 @@ public class ServiceClass implements EnvironmentAware {
 		return repo.findById(id);
 		
 	}
+	public Driver updateOrSaveDriver(Driver driver) {
+		
+		return repo.save(driver);
+	}
 	
 }
